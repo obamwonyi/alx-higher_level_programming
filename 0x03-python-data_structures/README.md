@@ -20,4 +20,24 @@ This project help solidify my understanding of basic python data structures like
 
 * 7. Tuples addition : Write a function that adds 2 tuples.
 
+* 8. More returns! : Write a function that returns a tuple with the length of a string and its first character.
 
+* 9. Find the max : Write a function that finds the biggest integer of a list.
+
+* 10. Only by 2 : Write a function that finds all multiples of 2 in a list.
+
+* 11. Delete at : Write a function that deletes the item at a specific position in a list.
+
+* 12. Switch : Complete the source ( https://github.com/alx-tools/0x03.py/blob/master/12-switch_py ) code in order to switch value of a and b
+
+* 13. Linked list palindrome : 
+
+Technical interview preparation:
+
+You are not allowed to google anything
+Whiteboard first
+Write a function in C that checks if a singly linked list is a palindrome.
+
+Prototype: int is_palindrome(listint_t **head);
+Return: 0 if it is not a palindrome, 1 if it is a palindrome
+An empty list is considered a palindrome
