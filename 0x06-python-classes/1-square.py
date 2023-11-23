@@ -10,4 +10,4 @@ class Square:
         Args:
             size: length of a side of the square.
         """
-        self._size = size
+        self.__size = size
