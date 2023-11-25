@@ -1,4 +1,4 @@
-# 0x07. Python - Test-driven development
+<h1>0x07. Python - Test-driven development </h1>
 
 Implementation of doc test, unit test , interactive and uninteractive tests in projects, the various task below where handled with use of these various tests.
 
@@ -8,7 +8,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 0-->
 <div>
-<h1> 0. Integers addition </h1>
+<h2> 0. Integers addition </h2>
 <div>
 <h3>Write a function that adds 2 integers.</h3>
 
@@ -25,7 +25,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 1-->
 <div>
-<h1> 1. Divide a matrix </h1>
+<h2> 1. Divide a matrix </h2>
 <div>
 <h3>Write a function that divides all elements of a matrix.</h3>
 
@@ -46,7 +46,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 2-->
 <div>
-<h1> 2. Say my name </h1>
+<h2> 2. Say my name </h2>
 <div>
 <h3>Write a function that prints My name is [first name] [last name]</h3>
 
@@ -61,7 +61,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 3-->
 <div>
-<h1> 3. Print square </h1>
+<h2> 3. Print square </h2>
 <div>
 <h3>Write a function that prints a square with the character #.</h3>
 
@@ -85,7 +85,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 4-->
 <div>
-<h1> 4. Text indentation </h1>
+<h2> 4. Text indentation </h2>
 <div>
 <h3>Write a function that prints a text with 2 new lines after each of these characters: ., ? and :</h3>
 
@@ -106,7 +106,7 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 
 <!-- task 5-->
 <div>
-<h1> 5. Max integer - Unittest </h1>
+<h2> 5. Max integer - Unittest </h2>
 <div>
 <h3>Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unit tests.</h3>
 <h3>
