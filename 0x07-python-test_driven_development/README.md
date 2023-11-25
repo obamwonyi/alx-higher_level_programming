@@ -108,14 +108,25 @@ Implementation of doc test, unit test , interactive and uninteractive tests in p
 <div>
 <h1> 5. Max integer - Unittest </h1>
 <div>
-<h3>Write a function that adds 2 integers.</h3>
+<h3>Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unit tests.</h3>
+<h3>
+In this task, you will write unit tests for the function def max_integer(list=[]):
+</h3>
 
 <ul>
-<li>Prototype: def add_integer(a, b=98):</li>
-<li>a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer</li>
-<li>a and b must be first casted to integers if they are float</li>
-<li>Returns an integer: the addition of a and b</li>
-<li>You are not allowed to import any module</li>
+<li>Your test file should be inside a folder tests</li>
+
+<li>You have to use the unittest module</li>
+
+<li>Your test file should be python files (extension: .py)</li>
+
+<li>Your test file should be executed by using this command: python3 -m unittest tests.6-max_integer_test</li>
+
+<li>All tests you make must be passable by the function below</li>
+
+<li>
+We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+</li>
 </ul>
 
 </div>
