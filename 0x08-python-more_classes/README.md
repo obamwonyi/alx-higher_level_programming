@@ -33,13 +33,57 @@ You are not allowed to import any module
 </h2>
 
 <h3>
-Write an empty class Rectangle that defines a rectangle:
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
 <h3>
 
 <ul>
 
 <li>
-You are not allowed to import any module
+Private instance attribute: width:
+<div>
+<ul>
+<li>
+property def width(self): to retrieve it
+</li>
+<li>
+property setter def width(self, value): to set it
+<div>
+<ul>
+<li>
+width must be an integer, otherwise raise a TypeError exception with the message width must be an integer
+</li>
+<li>
+if width is less than 0, raise a ValueError exception with the message width must be >= 0
+</li>
+</ul>
+</di>
+</li>
+</ul>
+</div>
+</li>
+
+<li>
+Private instance attribute: height:
+<div>
+<ul>
+<li>
+property def height(self): to retrieve it
+</li>
+<li>
+property setter def height(self, value): to set it:
+<div>
+<ul>
+<li>
+height must be an integer, otherwise raise a TypeError exception with the message height must be an integer
+</li>
+<li>
+if height is less than 0, raise a ValueError exception with the message height must be >= 0
+</li>
+</ul>
+</di>
+</li>
+</ul>
+</div>
 </li>
 
 </ul>
