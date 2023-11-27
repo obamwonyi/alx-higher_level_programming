@@ -86,8 +86,17 @@ if height is less than 0, raise a ValueError exception with the message height m
 </div>
 </li>
 
+<li>
+Instantiation with optional width and height: def __init__(self, width=0, height=0):
+</li>
+
+<li>
+You are not allowed to import any module
+</li>
+
 </ul>
 </div>
+
 
 <!-- task 2-->
 <div>
