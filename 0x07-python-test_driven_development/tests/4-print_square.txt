@@ -1,135 +1,81 @@
-The ``5-text_indentation`` module
+The ``4-print_square`` module
 ============================
 
-Using ``text_indentation``
+Using ``print_square``
 ---------------------
 
 Import module:
-    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> print_square = __import__('4-print_square').print_square
 
-Test no delim:
-    >>> text_indentation("Hello Holberton")
-    Hello Holberton
+Test normal print 0:
+    >>> print_square(0)
 
-Test string with spaces:
-    >>> text_indentation("Holberton          ")
-    Holberton
+Test normal print 1:
+    >>> print_square(1)
+    #
 
-Test string with spaces 2:
-    >>> text_indentation("        Holberton")
-    Holberton
-    
-Test string with spaces 3:
-    >>> text_indentation("        Holberton          ")
-    Holberton
-    
-Test string with empty string:
-    >>> text_indentation("")
+Test normal print 2:
+    >>> print_square(2)
+    ##
+    ##
 
-Test string with empty string 2:
-    >>> text_indentation("      ")
+Test normal print 3:
+    >>> print_square(3)
+    ###
+    ###
+    ###
 
-Test simple:
-    >>> text_indentation("Hello: Holberton")
-    Hello:
-    <BLANKLINE>
-    Holberton
+Test normal print 10:
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
 
-Test delims with spaces:
-    >>> text_indentation("      ?:  :  ")
-    ?
-    <BLANKLINE>
-    :
-    <BLANKLINE>
-    :
-    <BLANKLINE>
+Test negative:
+    >>> print_square(-10)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
 
-Test newline:
-    >>> text_indentation("\n")
-    <BLANKLINE>
+Test float:
+    >>> print_square(10.0)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
 
-Test newline 2:
-    >>> text_indentation("\n\n")
-    <BLANKLINE>
-    <BLANKLINE>
-
-Test newline 3:
-    >>> text_indentation("Hello\n\n")
-    Hello
-    <BLANKLINE>
-
-Test all delimeters:
-    >>> text_indentation("Hello: Holberton? school. fooo")
-    Hello:
-    <BLANKLINE>
-    Holberton?
-    <BLANKLINE>
-    school.
-    <BLANKLINE>
-    fooo
-
-Test all delimeters with spaces:
-    >>> text_indentation("Hello   :     Holberton    ?    school.    fooo")
-    Hello:
-    <BLANKLINE>
-    Holberton?
-    <BLANKLINE>
-    school.
-    <BLANKLINE>
-    fooo
-
-Test all delimeters with spaces at end:
-    >>> text_indentation("Hello   :     Holberton    ?    school.    fooo     ")
-    Hello:
-    <BLANKLINE>
-    Holberton?
-    <BLANKLINE>
-    school.
-    <BLANKLINE>
-    fooo
-
-Test just delimeters:
-    >>> text_indentation(".?:")
-    .
-    <BLANKLINE>
-    ?
-    <BLANKLINE>
-    :
-    <BLANKLINE>
-
-Test just delimeters 2:
-    >>> text_indentation("     ?   ")
-    ?
-    <BLANKLINE>
-
-Test nonindent inside indent
-    >>> text_indentation("?Hello.")
-    ?
-    <BLANKLINE>
-    Hello.
-    <BLANKLINE>
-
-Test existing newlines:
-    >>> text_indentation("?\n\n.\n\n:")
-    ?
-    <BLANKLINE>
-    <BLANKLINE>
-    <BLANKLINE>
-    .
-    <BLANKLINE>
-    <BLANKLINE>
-    <BLANKLINE>
-    :
-    <BLANKLINE>
+Test str:
+    >>> print_square("foo")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
 
 Test none:
-    >>> text_indentation(None)
+    >>> print_square(None)
     Traceback (most recent call last):
     ...
-    TypeError: text must be a string
+    TypeError: size must be an integer
 
-Test number:
-    >>> text_indentation(33)
+Test inf:
+    >>> print_square(float('inf'))
     Traceback (most recent call last):
     ...
-    TypeError: text must be a string
+    TypeError: size must be an integer
+
+Test nan:
+    >>> print_square(float('nan'))
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Missing one argument:
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
