@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defining function"""
 
+
 def pascal_triangle(n):
     """Represent Pascal's Trangle of size n.
         Returns a list of lists of integers representing the trangle.
@@ -20,4 +21,3 @@ def pascal_triangle(n):
         tmp.append(1)
         triangles.append(tmp)
     return traingles
-
